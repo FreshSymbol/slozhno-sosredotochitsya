@@ -1,6 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: "IBM Plex mono", monospace;
   font-size: 18px;
   color: var(--base-color-text);
@@ -176,6 +174,7 @@
 .article__picture {
   max-width: 100%;
 }
+
 .article__image {
   width: 100%;
 }
