@@ -111,12 +111,9 @@
 }
 
 .header__text {
+  margin-block-end: 60px;
   color: var(--additional-color);
   font-weight: 700;
-}
-
-.header__text {
-  margin-block-end: 60px;
 }
 
 .content {
@@ -181,6 +178,7 @@
 
 .footer {
   position: relative;
+  min-height: 100vh;
   padding: 10px;
 }
 
