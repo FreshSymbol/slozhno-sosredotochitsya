@@ -22,4 +22,8 @@
     --decor-color: var(--base-color-text);
     --bg-image: url(../images/cover-image-light.png);
   }
+
+  .page.theme_light .decorated-element {
+    visibility: hidden;
+  }
 }
