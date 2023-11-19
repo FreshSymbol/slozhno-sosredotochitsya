@@ -7,6 +7,5 @@
   --section-title-color: var(--accent-color);
   --article-subtitle-color: var(var(--additional-color));
   --decor-color: var(--accent-color);
-  --visibility: visible;
   --bg-image: url(../images/cover-image.png);
 }

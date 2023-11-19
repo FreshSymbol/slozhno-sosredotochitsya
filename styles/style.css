@@ -6,10 +6,6 @@
   font-weight: 400;
   line-height: 23.4px;
   background: var(--additional-color) var(--bg-image) no-repeat center/cover;
-  background-image: image-set(
-    url(../images/cover-image-dark.avif) type("image/avif"),
-    url(../images/cover-image-dark.webp) type("image/webp")
-  );
   background-attachment: fixed;
 }
 
@@ -70,7 +66,7 @@
 .header__theme-menu-list {
   margin-inline-end: 10px;
   display: grid;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -84,7 +80,8 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--decor-color);
+  outline: 1px solid var(--decor-color);
+  outline-offset: 2px;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -95,6 +92,7 @@
 
 .header__theme-menu-button:hover {
   outline: 1px solid var(--decor-color);
+  outline-offset: 2px;
 }
 
 .text-decor {
@@ -111,6 +109,7 @@
 }
 
 .header__text {
+  max-height: 120px;
   margin-block-end: 60px;
   color: var(--additional-color);
   font-weight: 700;
@@ -212,14 +211,14 @@
   }
 
   .header__title {
-    margin: 177px 0 155px -18px;
+    margin: 177px 0 163px -18px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {
     justify-self: end;
     max-width: 364px;
-    margin-block-end: 170px;
+    margin-block-end: 167px;
   }
 
   .content {
@@ -237,14 +236,11 @@
   }
 
   .content__section-title {
-    max-width: 236px;
+    max-width: 230px;
   }
 
   .picture-wrapper {
     gap: 20px;
-    grid-template-columns: repeat(auto, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    margin-block-start: 10px;
   }
 
   .article__picture:nth-child(1) {
@@ -273,6 +269,7 @@
   }
 
   .article__image {
+    display: block;
     min-height: 100%;
     object-fit: cover;
     object-position: center;
@@ -280,6 +277,7 @@
 
   .footer {
     padding: 20px;
+    margin-block-start: 40px;
   }
 
   .footer__text {
@@ -295,7 +293,6 @@
   }
 
   .header__theme-menu {
-    justify-self: center;
     grid-row: 1;
     grid-column: 2;
   }
@@ -344,13 +341,20 @@
   }
 
   .content__section-title {
-    min-width: 300px;
+    min-width: 315px;
+  }
+
+  .content__section:nth-child(odd) > .article {
+    margin-inline-start: -5px;
   }
 
   .article__text {
     min-width: none;
   }
 
+  .footer {
+    margin-block-start: 40px;
+  }
   .footer__text {
     margin: 300px 0;
   }

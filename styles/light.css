@@ -1,4 +1,4 @@
-.theme_light {
+.page.theme_light {
   --accent-color: #ff8dcb;
   --main-title-color: #ffc2e6;
   --base-color-text: #353430;
@@ -7,7 +7,6 @@
   --section-title-color: var(--base-color-text);
   --article-subtitle-color: var(--base-color-text);
   --decor-color: var(--base-color-text);
-  --visibility: hidden;
   --bg-image: url(../images/cover-image-light.png);
 }
 
@@ -22,17 +21,5 @@
     --section-title-color: var(--base-color-text);
     --decor-color: var(--base-color-text);
     --bg-image: url(../images/cover-image-light.png);
-  }
-
-  .page.theme_light {
-    background: var(--additional-color) var(--bg-image) no-repeat center/cover;
-    background-image: image-set(
-      url(../images/cover-image-light.avif) type("image/avif"),
-      url(../images/cover-image-light.webp) type("image/webp")
-    );
-  }
-
-  .decorated-element {
-    visibility: var(--visibility);
   }
 }
