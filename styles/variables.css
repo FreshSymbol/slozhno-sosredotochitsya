@@ -5,7 +5,7 @@
   --additional-color: #000028;
   --article-title-color: var(--additional-color);
   --section-title-color: var(--accent-color);
-  --article-subtitle-color: var(var(--additional-color));
   --decor-color: var(--accent-color);
   --bg-image: url(../images/cover-image.png);
+  --visibility: visible;
 }

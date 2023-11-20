@@ -5,9 +5,9 @@
   --additional-color: #fff1f7;
   --article-title-color: var(--base-color-text);
   --section-title-color: var(--base-color-text);
-  --article-subtitle-color: var(--base-color-text);
   --decor-color: var(--base-color-text);
   --bg-image: url(../images/cover-image-light.png);
+  --visibility: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -17,13 +17,13 @@
     --base-color-text: #353430;
     --additional-color: #fff1f7;
     --article-title-color: var(--base-color-text);
-    --article-subtitle-color: var(--base-color-text);
     --section-title-color: var(--base-color-text);
     --decor-color: var(--base-color-text);
     --bg-image: url(../images/cover-image-light.png);
+    --visibility: hidden;
   }
 
-  .page.theme_light .decorated-element {
-    visibility: hidden;
+  .decorated-element {
+    visibility: var(--visibility);
   }
 }

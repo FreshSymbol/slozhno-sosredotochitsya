@@ -8,6 +8,7 @@
   --section-title-color: var(--accent-color);
   --decor-color: var(--accent-color);
   --bg-image: url(../images/cover-image-dark.png);
+  --visibility: visible;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +18,13 @@
     --base-color-text: #f1b2ce;
     --additional-color: #000028;
     --article-title-color: var(--additional-color);
-    --article-subtitle-color: var(--additional-color);
     --section-title-color: var(--accent-color);
     --decor-color: var(--accent-color);
     --bg-image: url(../images/cover-image-dark.png);
+    --visibility: visible;
   }
 
-  .page.theme_light .decorated-element {
-    visibility: visible;
+  .decorated-element {
+    visibility: var(--visibility);
   }
 }
